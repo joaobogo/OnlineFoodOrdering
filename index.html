@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+    <title>Foodie Project</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Link to swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+    <!-- Link to icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/c93511b22d.js" crossorigin="anonymous"></script>
+
+   
+</head>
+<body>
+
+    <!-- Header/NavBar -->
+    <header class="header flex" id="header">
+        <div class="logoDiv">
+            <a href="index.html" class="logo">
+                FOODIE.
+            </a>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navBar" id="navBar">
+            <ul class="navLists flex">
+                <li class="navItem">
+                    <a href="index.html" class="navLink">Home</a>
+                </li>
+
+                <li class="navItem">
+                    <a href="#about" class="navLink">About</a>
+                </li>
+
+                <li class="navItem">
+                    <a href="menu.html" class="navLink">Menu</a>
+                </li>
+
+                <li class="navItem">
+                    <a href="/admin/dasboard.html" class="navLink">Dash</a>
+                </li>
+
+                <div class="navBarText">
+                    <p>Eat Anything, At anywhere, By Anytime.</p>
+                </div>
+
+                <!-- Toggle-Off navBar Icon -->
+                <div class="closeNavbar" id="closeBtn">
+                    <i class='bx bxs-x-circle icon'></i>
+                </div>
+            </ul>
+        </div>
+
+        <!-- HeaderIcons -->
+        <div class="headerIcons flex">
+            <a href="cart.html">
+                <i class="uil uil-shopping-bag icon"></i>
+            </a>
+
+             <div class="contactNumber">
+                <i class="uil uil-phone icon phoneIcon"></i>
+                <div class="phoneCard flex">
+                    <i class='bx bxs-phone icon'></i>
+                    <h3> +444 789 445 67</h3>
+                </div>
+             </div>
+
+        </div>
+
+        <!-- Toggle-On navBar Icon -->
+        <div class="toggleNavbar" id="toggler">
+            <i class="uil uil-align-justify icon"></i>
+        </div>
+    </header>
+    <!-- Header/NavBar Ends -->
+
+    <!-- Home Section -->
+    <section id="#home" class="home container">
+
+        <div class="sectionContent grid">
+            <div data-aos="fade-right"  class="homeText">
+                <h1 class="title">
+                    Enjoy <span>Delicious Food</span> At Your Door Step
+                </h1>
+    
+                <p>We offer the best online portal that allows customers to order food online without visiting the restaurant.
+                </p>
+    
+                <button class="btn flex">
+                    Order Now  <i class="uil uil-arrow-right icon"></i>
+                </button>
+            </div>
+            <div  class="homeImage">
+                <img src="./Assests/homeImage.png" alt="Best food in Nigeria">
+            </div>
+
+            <img src="./Assests/floating (1).png" alt="" class="floatingImg1">
+            <img src="./Assests/floating (2).png" alt="" class="floatingImg2">
+            <img src="./Assests/floating (3).png" alt="" class="floatingImg3">
+        </div>
+       
+    </section>
+    <!-- Home Section Ends -->
+
+
+    <!-- Category Section -->
+    <div class="categoriesDiv container">
+        <div class="sectionContent grid">
+
+            <!-- Single Category -->
+            <div data-aos="fade-right" data-aos-duration="2000" class="singleCat">
+                <img src="./Assests/diet.png" alt="Food Website">
+
+                <h2 class="catTitle">
+                Tasty Foods
+                </h2>
+
+                <p>
+                There are so many varieties of food around the town but ours got one more taste.
+                </p>
+
+                <a class="btn" href="menu.html">
+                   See Menu
+                </a>
+
+            </div>
+
+            <!-- Single Category -->
+            <div data-aos="fade-right" data-aos-duration="3000" class="singleCat">
+                <img src="./Assests/drink.png" alt="Food Website">
+
+                <h2 class="catTitle">
+                Drinks
+                </h2>
+
+                <p>
+                There are so many varieties of food around the town but ours got one more taste.
+                </p>
+
+                <a class="btn" href="menu.html">
+                   See Menu
+                </a>
+
+            </div>
+
+            <!-- Single Category -->
+            <div data-aos="fade-right" data-aos-duration="4000" class="singleCat">
+                <img src="./Assests/cake.png" alt="Food Website">
+
+                <h2 class="catTitle">
+                Quick-Es
+                </h2>
+
+                <p>
+                There are so many varieties of food around the town but ours got one more taste.
+                </p>
+
+                <a class="btn" href="menu.html">
+                   See Menu
+                </a>
+
+            </div>
+
+            <!-- Single Category -->
+            <div data-aos="fade-right" data-aos-duration="5000" class="singleCat">
+                <img src="./Assests/dessert.png" alt="Food Website">
+
+                <h2 class="catTitle">
+                  Dessert
+                </h2>
+
+                <p>
+                There are so many varieties of food around the town but ours got one more taste.
+                </p>
+
+                <a class="btn" href="menu.html">
+                   See Menu
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Category Section ends -->
+
+    <!-- About Section -->
+    <section id="about" class="about section container">
+
+        <div class="sectionContent grid"> 
+            <div class="aboutImage">
+                <img src="./Assests/aboutImage.png" alt="Best food in Nigeria">
+            </div>
+            <div data-aos="fade-left" data-aos-duration="2000" class="aboutText">
+                <h1 class="title">
+                    Why People Choose Us!
+                </h1>
+    
+                <div class="aboutList grid">
+                  <div data-aos="fade-down" data-aos-duration="2000" class="singleInfo flex">
+
+                    <div class="smallImage">
+                    <img src="./Assests/hamburger.png" alt="Food delivery">
+                    </div>
+
+                    <div class="desc">
+                        <h5>Choose Your Favourite</h5>
+                        <p>
+                            There are so many varieties of food around the town but ours got one more taste.
+                        </p>
+                        
+                    </div>
+
+                     
+                  </div>
+                  <div data-aos="fade-down" data-aos-duration="3000" class="singleInfo flex">
+
+                    <div class="smallImage">
+                    <img src="./Assests/delivery-man.png" alt="Food delivery">
+                    </div>
+
+                    <div class="desc">
+                        <h5>We Deliver Your Meals</h5>
+                        <p>
+                            There are so many varieties of food around the town but ours got one more taste.
+                        </p>
+                        
+                    </div>
+
+                     
+                  </div>
+
+                  <div data-aos="fade-down" data-aos-duration="4000" class="singleInfo flex">
+
+                    <div class="smallImage">
+                    <img src="./Assests/dish.png" alt="Food delivery">
+                    </div>
+
+                    <div class="desc">
+                        <h5>Grab Your Delicious</h5>
+                        <p>
+                            There are so many varieties of food around the town but ours got one more taste.
+                        </p>
+                        
+                    </div>
+
+                     
+                  </div>
+                </div>
+    
+                
+            </div>
+        </div>
+       
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Popular Food Items -->
+    <section class="section popular container">
+        <div class="sectionContent">
+            <div data-aos="fade-down" data-aos-duration="4000" class="sectionIntro">
+                <h2>Our Popular Food Item</h2>
+                <p>You don't need a silver fork to eat good food.</p>
+            </div>
+
+            <div class="contentWrapper">
+                <div class="content swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- SingleItem -->
+                        <div data-aos="fade-up" data-aos-duration="2000" class="swiper-slide singleItem">
+                            <div class="rating">
+                                <i class='bx bxs-star icon'></i>
+                                4.5
+                            </div>
+
+                            <div class="imgDiv  flex">
+                                <a href="details.html">
+                                    <img src="./Assests/popular (5).png" alt="Food Delivery Website">
+                                </a>
+                            </div>
+
+                            <h2 class="foodTitle">
+                                Chocolate Donuts
+                            </h2>
+
+                            <p>
+                                You don't need a silver fork to eat good food.
+                            </p>
+
+                            <h4 class="price">
+                              <a href="details.html">
+                                $20.0 <i class="uil uil-external-link-alt icon"></i>
+                              </a>
+                            </h4>
+
+                        </div>
+
+                        <!-- SingleItem -->
+                        <div data-aos="fade-up" data-aos-duration="3000" class="swiper-slide singleItem">
+                            <div class="rating">
+                                <i class='bx bxs-star icon'></i>
+                                4.5
+                            </div>
+
+                            <div class="imgDiv  flex">
+                                <a href="details.html">
+                                    <img src="./Assests/popular (2).png" alt="Food Delivery Website">
+                                </a>
+                            </div>
+
+                            <h2 class="foodTitle">
+                                Chicken Sandwich
+                            </h2>
+
+                            <p>
+                                You don't need a silver fork to eat good food.
+                            </p>
+
+                            <h4 class="price">
+                              <a href="details.html">
+                                $20.0
+                                <i class="uil uil-external-link-alt icon"></i>
+                              </a>
+                            </h4>
+
+                        </div>
+
+                        <!-- SingleItem -->
+                        <div data-aos="fade-up" data-aos-duration="4000" class="swiper-slide singleItem">
+                            <div class="rating">
+                                <i class='bx bxs-star icon'></i>
+                                4.5
+                            </div>
+
+                            <div class="imgDiv  flex">
+                                <a href="details.html">
+                                    <img src="./Assests/popular (3).png" alt="Food Delivery Website">
+                                </a>
+                            </div>
+
+                            <h2 class="foodTitle">
+                                Chocolate Donuts
+                            </h2>
+
+                            <p>
+                                You don't need a silver fork to eat good food.
+                            </p>
+
+                            <h4 class="price">
+                              <a href="details.html">
+                                $20.0
+                                <i class="uil uil-external-link-alt icon"></i>
+                              </a>
+                            </h4>
+
+                        </div>
+                        
+                        <!-- SingleItem -->
+                        <div data-aos="fade-up" data-aos-duration="4000" class="swiper-slide singleItem">
+                            <div class="rating">
+                                <i class='bx bxs-star icon'></i>
+                                4.5
+                            </div>
+
+                            <div class="imgDiv  flex">
+                                <a href="details.html">
+                                    <img src="./Assests/popular (4).png" alt="Food Delivery Website">
+                                </a>
+                            </div>
+
+                            <h2 class="foodTitle">
+                                Chocolate Donuts
+                            </h2>
+
+                            <p>
+                                You don't need a silver fork to eat good food.
+                            </p>
+
+                            <h4 class="price">
+                              <a href="details.html">
+                                $20.0
+                                <i class="uil uil-external-link-alt icon"></i>
+                              </a>
+                            </h4>
+
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Food Items Ends -->
+
+    <!-- Customer Feedback -->
+    <section class="section container review">
+        <div class="sectionContent grid">
+              <div class="secText">
+
+                <div data-aos="fade-down" data-aos-duration="2000" class="secTitle">
+                    <h2>Customer <span>Feedback</span></h2>
+                </div>
+
+               <div class="content">      
+                <div data-aos="fade-down" data-aos-duration="3000" class="singleCustomer">
+                    <p>
+                        This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.
+                    </p>
+
+                    <div class="customerDetails flex">
+                        <div class="img">
+                            <img src="./Assests/user (1).jpg" alt="Online food ordering">
+                        </div>
+                        <div class="name">
+                            Mr. João Bogo <br>
+                            <span>
+                                Web Developer
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" data-aos-duration="2000" class="records flex">
+                    <div data-aos="fade-up" data-aos-duration="2000" class="leftDiv flex">
+                       <img src="./Assests/chef (2).png" alt="Online restaurant">
+                       <h1>50</h1>
+                       <span>Chef <br> Professionals</span>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="3000" class="leftDiv flex">
+                       <img src="./Assests/medal.png" alt="Online restaurant">
+                       <h1>140</h1>
+                       <span>Customer <br> Satisfaction</span>
+                    </div>
+                    
+                </div>
+               </div>
+
+              </div>
+
+              <div  class="secImage">
+                <img src="./Assests/chef.png" alt="Food chef" data-aos="fade-left" data-aos-duration="2000">
+              </div>
+        </div>
+    </section>
+    <!-- Customer Feedback Ends-->
+
+    <!-- Subscription Section -->
+    <section class="section container newsLetter">
+        <div data-aos="fade-right" data-aos-duration="2000" class="sectionContent flex">
+            <h1>Subscribe <span>Newsletter</span></h1>
+
+            <form  action="">
+                <div class="input flex">
+                    <input type="email" name="email" placeholder="Enter your email address">
+
+                    <button type="submit" class="btn">
+                        Subscribe Now
+                    </button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Subscription Section End -->
+
+    <!-- Footer Section -->
+    <section class="container footer">
+       <div class="sectionContent grid">
+
+        <div data-aos="fade-down" data-aos-duration="2000" class="footerIntro">
+        <div class="logoDiv">
+            <a href="#" class="logo">
+                FOODIE.
+            </a>
+        </div>
+        <p>
+            579 8th Avenue Canadian Highway, 3443. <br>
+            Canada.
+            
+            <span class="phone">+444 789 000 00</span>
+        </p>
+
+        <div class="socials flex">
+            <i class='bx bxl-facebook-circle icon'></i>
+            <i class='bx bxl-instagram-alt icon' ></i>
+            <i class='bx bxl-twitter icon' ></i>
+            <i class='bx bxl-youtube icon' ></i>
+        </div>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="3000" class="timing">
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday 8AM - 11PM</p>
+        <p>Saturday - Sunday 8AM - 6PM</p>
+        
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="3000" class="quickLinks">
+            <h3>Quick Link</h3>
+            <li class="navItem">
+                <a href="index.html" class="navLink">Home</a>
+            </li>
+
+            <li class="navItem">
+                <a href="#about" class="navLink">About</a>
+            </li>
+
+            <li class="navItem">
+                <a href="menu.html" class="navLink">Menu</a>
+            </li>
+
+            <li class="navItem">
+                <a href="login.html" class="navLink">Administrators</a>
+            </li>
+
+        </div>
+       </div>
+    </section>
+    <!-- Footer Section Ends -->
+
+    <!-- Copyright Div -->
+    <section class="copyrightDiv">
+        <p>ALL RIGHT RESERVED | João Bogo <script>document.write(new Date().getFullYear())</script></p>
+    </section>
+    <!-- Copyright Div Ends -->
+
+
+    <!-- Link to swiper JS -->
+    <script src="./swiper-bundle.min.js"></script>
+    <!-- Link to JS -->
+    <script src="./index.js"></script>
+
+    <!-- Link AOS.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+</body>
+</html>

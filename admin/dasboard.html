@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Foodie Project</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="/admin/admin.css">
+
+    <!-- Link to swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+    <!-- Link to icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/c93511b22d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="adminPage flex">
+        <div class="sideMenu">
+            <div class="logoDiv flex">
+                <img src="../Assests/floating (2).png" alt="Logo Image">
+                <h1>Foodie.</h1>
+            </div>
+
+            <div class="menuList">
+                <span class="listTitle">
+                    MENU
+                </span>
+                <ul class="menuLists">
+                    <li class="listItem active">
+                        <a href="dasboard.html" class="menuLink flex">
+                            <i class='bx bxs-home-smile icon'></i>
+                            <span class="LinkText">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="listItem">
+                        <a href="orders.html" class="menuLink flex">
+                            <i class='bx bxs-cart icon' ></i>
+                            <span class="LinkText">All Orders</span>
+                        </a>
+                    </li>
+
+                    <li class="listItem">
+                        <a href="table.html" class="menuLink flex">
+                            <i class="uil uil-lamp icon"></i>
+                            <span class="LinkText">Table Reservations</span>
+                        </a>
+                    </li>
+
+                    <li class="listItem">
+                        <a href="menu.html" class="menuLink flex">
+                            <i class='bx bxs-bowl-rice icon'></i>
+                            <span class="LinkText">All Menu</span>
+                        </a>
+                    </li>
+
+                    <li class="listItem">
+                        <a href="review.html" class="menuLink flex">
+                            <i class='bx bxs-message-alt-dots icon' ></i>
+                            <span class="LinkText">Customer Reviews</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="menuList">
+                <span class="listTitle">
+                        OTHERS
+                </span>
+                <ul class="menuLists">
+                   
+
+                    <li class="listItem">
+                        <a href="db.html" class="menuLink flex">
+                            <i class='bx bxs-face icon' ></i>
+                            <span class="LinkText">Delivery Boys</span>
+                        </a>
+                    </li>
+
+                    <li class="listItem">
+                        <a href="subscribers.html" class="menuLink flex">  
+                            <i class='bx bxs-envelope icon' ></i>
+                            <span class="LinkText">Subscription</span>
+                        </a>
+                    </li>
+
+                    <li class="listItem">
+                        <a href="settings.html" class="menuLink flex">
+                            <i class='bx bxs-cog icon' ></i>
+                            <span class="LinkText">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+         </div>
+         
+         <div class="mainBody">
+            <div class="topSection flex">
+                <div class="title">
+                    <span><strong>Foodie</strong> Dashboard</span>
+                </div>
+
+                <div class="adminDiv flex">
+                    <div class="notDiv">
+                        <i class='bx bxs-bell icon' ></i>
+                        <span class="count">4</span>
+                    </div>
+                    <div class="imgDiv flex">
+                        <img src="../Assests/user (1).jpg" alt="Account Admin Image">
+                        <span class="name">João Bogo <br><small>Administrator</small></span>
+                    </div>
+
+                    <a href="../login.html" class="btn bg logOutBtn" title="Log Out"><i class="uil uil-signout icon"></i></a>
+                </div>
+
+                
+            </div>
+
+            <div class="mainBodyContentContainer">
+                <div class="summarySection grid">
+                    <div class="summaryCard">
+                      <span class="flex"> 
+                          <img src="../Assests/cart.png" alt="">
+                          <span class="cardTitle">
+                               Total Orders
+                          </span>
+                      </span>
+                      <h1 class="count">
+                          56
+                      </h1>
+  
+                      <span class="overlayText">56</span>
+                    </div>
+  
+                    <div class="summaryCard">
+                      <span class="flex">
+                          <img src="../Assests/clock.png" alt="">
+                          <span class="cardTitle">
+                            Delivered Orders
+                       </span>
+                      </span>
+                      <h1 class="count">
+                          31
+                      </h1>
+  
+                      <span class="overlayText">31</span>
+                    </div>
+  
+                    <div class="summaryCard">
+                      <span class="flex">
+                          <img src="../Assests/rating.png" alt="">
+                          <span class="cardTitle">
+                            Table Bookings
+                       </span>
+                      </span>
+                      <h1 class="count">
+                          9
+                      </h1>
+  
+                      <span class="overlayText">9</span>
+                    </div>
+  
+                    <div class="summaryCard incomeCard">
+                      <span class="flex">
+                          <img src="../Assests/customer.png" alt="">
+                          <span class="cardTitle">
+                            Total Income
+                       </span>
+                      </span>
+                      <h1 class="count">
+                          $1,778
+                      </h1>
+  
+                      <span class="overlayText">778</span>
+                    </div>
+              </div>
+  
+              <div class="categoriresSection ">
+                 <div class="secHeader flex">
+                  <div class="subTitle">
+                      <h3><strong>Food</strong> Categories</h3>
+                  </div>
+                  <div class="btn">
+                      <a href="menu.html">
+                        See All <i class="uil uil-angle-right icon"></i>
+                      </a>
+                  </div>
+                 </div>
+  
+                 <div class="optionMenu flex">
+                  <div class=" option">
+                    <img src="../Assests/diet.png" alt="Best Online food delivery in Nigeria">
+                    <small>Foods</small>
+                  </div>
+                  <div class=" option">
+                    <img src="../assests/drink.png" alt="Best Online restaurant in Nigeria">
+                    <small>Drinks</small>
+                  </div>
+                  <div class=" option" >
+                    <img src="../assests/pizza.png" alt="Food Image">
+                    <small>Fast Food</small>
+                  </div>
+                  <div class=" option">
+                    <img src="../assests/cake.png" alt="Best Online restaurant in Nigeria">
+                    <small>Party</small>
+                  </div>
+                  <div class=" option">
+                    <img src="../assests/dessert.png" alt="Best Online restaurant in Nigeria">
+                    <small>Dessert</small>
+                  </div>
+                  <div class=" option">
+                    <img src="../assests/dessert.png" alt="Best Online restaurant in Nigeria">
+                    <small>Dessert</small>
+                  </div>
+                  <div class=" option">
+                    <img src="../assests/dessert.png" alt="Best Online restaurant in Nigeria">
+                    <small>Dessert</small>
+                  </div>
+                  <div class=" option">
+                    <img src="../assests/dessert.png" alt="Best Online restaurant in Nigeria">
+                    <small>Dessert</small>
+                  </div>
+              </div>
+              </div>
+  
+              <div class="mostOrdered">
+                  <div class="secHeader flex">
+                      <div class="subTitle">
+                          <h3><strong>Most</strong> Ordered Food</h3>
+                      </div>
+                  </div>
+  
+                 <div class="flex popularItemsContainer">
+                      <div class="singleItem">
+                          <div class="imgDiv">
+                              <img src="../Assests/popular (1).png" alt="Food image">
+                          </div>
+  
+                          <div class="itemInfo">
+                              <span class="itemName">food namew</span>
+                              <p class="desc">This item is being ordered frequently.</p>
+                            </div>
+                      </div>
+                      <div class="singleItem">
+                          <div class="imgDiv">
+                              <img src="../Assests/popular (2).png" alt="Food image">
+                          </div>
+  
+                          <div class="itemInfo">
+                              <span class="itemName">food namew</span>
+                              <p class="desc">This item is being ordered frequently.</p>
+                            </div>
+                      </div>
+                      <div class="singleItem">
+                          <div class="imgDiv">
+                              <img src="../Assests/popular (4).png" alt="Food image">
+                          </div>
+  
+                          <div class="itemInfo">
+                              <span class="itemName">food namew</span>
+                              <p class="desc">This item is being ordered frequently.</p>
+                            </div>
+                      </div>
+                      <div class="singleItem">
+                          <div class="imgDiv">
+                              <img src="../Assests/popular (3).png" alt="Food image">
+                          </div>
+  
+                          <div class="itemInfo">
+                              <span class="itemName">food namew</span>
+                              <p class="desc">This item is being ordered frequently.</p>
+                            </div>
+                      </div>
+  
+                 </div>
+  
+              </div>
+            </div>
+
+            
+         </div>
+    </div>
+
+
+    <!-- Link Admin.js -->
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Foodie Project</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Link to swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+    <!-- Link to icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/c93511b22d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Header/NavBar -->
+    <header class="header flex" id="header">
+        <div class="logoDiv">
+            <a href="index.html" class="logo">
+                FOODIE.
+            </a>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navBar" id="navBar">
+            <ul class="navLists flex">
+                <li class="navItem">
+                    <a href="index.html" class="navLink">Home</a>
+                </li>
+
+                <li class="navItem">
+                    <a href="menu.html" class="navLink">Menu</a>
+                </li>
+
+                <div class="navBarText">
+                    <p>Eat Anything, At anywhere, By Anytime.</p>
+                </div>
+
+                <!-- Toggle-Off navBar Icon -->
+                <div class="closeNavbar" id="closeBtn">
+                    <i class='bx bxs-x-circle icon'></i>
+                </div>
+            </ul>
+        </div>
+
+        <!-- HeaderIcons -->
+        <div class="headerIcons flex">
+            <a href="cart.html">
+                <i class="uil uil-shopping-bag icon"></i>
+            </a>
+
+             <div class="contactNumber">
+                <i class="uil uil-phone icon phoneIcon"></i>
+                <div class="phoneCard flex">
+                    <i class='bx bxs-phone icon'></i>
+                    <h3> +444 789 445 67</h3>
+                </div>
+             </div>
+
+      
+        </div>
+
+        <!-- Toggle-On navBar Icon -->
+        <div class="toggleNavbar" id="toggler">
+            <i class="uil uil-align-justify icon"></i>
+        </div>
+    </header>
+    <!-- Header/NavBar Ends -->
+
+    <!-- Check Out Page -->
+    <section class="section container checkOut">
+        <div class="secTitle">
+            <h2 class="title flex">
+                Checkout <img src="./Assests/trolley.png" alt="Icon">
+            </h2>
+        </div>
+
+        <div class="secContent">
+        <form method="POST">
+            <div class="mainContent grid">
+ 
+                <div class="rightDiv grid">
+                    <div class="personalInfo">
+                        <h3 class="title flex">Personal Information: <img src="./Assests/details.png" alt="Icon"></h3>
+        
+                        
+                            <div class="inputDiv ">
+    
+                                <div class="input">
+                                    <label for="fName">First Name</label>
+                                    <input type="text" name="fName" placeholder="Enter First Name" required>
+                                </div>
+    
+                                <div class="input">
+                                    <label for="LName">Last Name</label>
+                                    <input type="text" name="LName" placeholder="Enter Last Name" required>
+                                </div>
+    
+                                <div class="input">
+                                    <label for="phone">Phone</label>
+                                    <input type="number" name="phone" placeholder="Enter Phone Number" required>
+                                </div>
+    
+                                <div class="input">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                                </div>
+                            </div>
+                        
+                    </div>
+        
+                    <div class="deliveryAddress">
+                        <h3 class="title flex">Delivery Details: <img src="./Assests/house.png" alt="Icon"></h3>
+                        
+                            <div class="inputDiv">
+                                    <div class="input">
+                                        <label for="town">Location</label>
+                                        <select name="town" required>
+                                            <option value="London">London</option>
+                                            <option value="Liverpool">Liverpool</option>
+                                            <option value="Shefield">Shefield</option>
+                                            <option value="Leicester">Leicester</option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="input">
+                                    <label for="street">Street</label>
+                                    <input type="text" name="street" placeholder="Enter Your Street" required>
+                                    </div>
+                
+                                    <div class="input">
+                                    <label for="buildingNo">Building Number</label>
+                                    <input type="text" name="buildingNo" placeholder="Enter Building Number" required>
+                                    </div>
+                                    
+                                    <div class="input">
+                                    <label for="message">Message (Optional)</label>
+                                    <textarea name="message" placeholder="Any Message"></textarea>
+                                    </div>
+                            </div>
+                        
+                    </div>
+        
+                    <div class="paymentOption">
+                        <h3 class="title flex">Payment: <img src="./Assests/debit-card.png" alt="Icon"></h3>
+                        <div class="optionDiv">
+                            <div class="input flex">
+                               <div class="radio">
+                                <input type="radio" name="POD" class="input1">
+                                <span class="after"></span>
+                               </div>
+                                <label for="POD">Pay On Delivery: (Delivery fees: $5)</label>
+                            </div>
+    
+                            <div class="input flex">
+                                <div class="radio">
+                                    <input type="radio" name="mobile">
+                                    <span class="after input2"></span>
+                                </div>
+                                <label for="mobile">Mobile Transfer: (Transfer to: +170 959 085)</label>              
+                            </div>
+                            <div class="TID">
+                                <input type="text" name="tid" placeholder="Enter Your Transaction ID" required>
+                            </div>
+    
+    
+                            <div class="input flex">
+                                <div class="radio">
+                                    <input type="radio" name="mobile">
+                                    <span class="after input3"></span>
+                                </div>
+                                <label for="mobile">Restuarant Dining: (Please enter table number)</label>              
+                            </div>
+                            <div class="tableNumber">
+                                <input type="text" name="tableNumber" placeholder="Enter Your Table Number" required>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leftDiv grid">
+                    <div class="cartDiv grid">
+                        <h3 class="title flex">
+                            Your order: <img src="./Assests/cart.png" alt="Icon">
+                        </h3>
+        
+                        <div class="singleCart flex">
+                            <img src="./Assests/popular (1).png" alt="Food Image">
+                            <div class="foodDetails">
+                                <span class="name_closeIcon flex">
+                                    Chocolate Donut
+                                    <i class='bx bx-x icon' ></i>
+                                </span>
+                                <span class="qty_price flex">
+                                    <span>Quantity: 1</span>
+                                    <span>$6.23</span>
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="singleCart flex">
+                            <img src="./Assests/popular (2).png" alt="Food Image">
+                            <div class="foodDetails">
+                                <span class="name_closeIcon flex">
+                                    Chocolate Donut
+                                    <i class='bx bx-x icon' ></i>
+                                </span>
+                                <span class="qty_price flex">
+                                    <span>Quantity: 1</span>
+                                    <span>$6.23</span>
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="singleCart flex">
+                            <img src="./Assests/popular (3).png" alt="Food Image">
+                            <div class="foodDetails">
+                                <span class="name_closeIcon flex">
+                                    Chocolate Donut
+                                    <i class='bx bx-x icon' ></i>
+                                </span>
+                                <span class="qty_price flex">
+                                    <span>Quantity: 1</span>
+                                    <span>$6.23</span>
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="singleCart flex">
+                            <img src="./Assests/popular (4).png" alt="Food Image">
+                            <div class="foodDetails">
+                                <span class="name_closeIcon flex">
+                                    Chocolate Donut
+                                    <i class='bx bx-x icon' ></i>
+                                </span>
+                                <span class="qty_price flex">
+                                    <span>Quantity: 1</span>
+                                    <span>$6.23</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="amountDiv">
+                        <h3 class="title flex">
+                           Order Fees: <img src="./Assests/order.png" alt="Icon">
+                        </h3>
+                
+                        <span class="cartList flex">
+                            <span class="subTitle">
+                                Subtotal:
+                            </span>
+                            <span class="cost">
+                                $60.30
+                            </span>
+                           
+                        </span>
+        
+                        <span class="cartList flex">
+                            <span class="subTitle">
+                                Total:
+                            </span>
+                            <span class="gradCost">
+                                $60.30
+                            </span>
+                        </span>
+        
+                        <button type="submit" name="submit" class="btn">Purchase</button> 
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+         
+       
+        </div>
+    </section>
+    <!-- Check Out Page End -->
+
+    <!-- Footer Section -->
+    <section class="container footer">
+        <div class="sectionContent grid">
+ 
+         <div class="footerIntro">
+         <div class="logoDiv">
+             <a href="index.html" class="logo">
+                FOODIE.
+             </a>
+         </div>
+         <p>
+             579 8th Avenue Canadian Highway, 3443. <br>
+             Canada.
+             
+             <span class="phone">+444 789 000 00</span>
+         </p>
+ 
+         <div class="socials flex">
+             <i class='bx bxl-facebook-circle icon'></i>
+             <i class='bx bxl-instagram-alt icon' ></i>
+             <i class='bx bxl-twitter icon' ></i>
+             <i class='bx bxl-youtube icon' ></i>
+         </div>
+         </div>
+ 
+         <div class="timing">
+         <h3>Opening Hours</h3>
+         <p>Monday - Friday 8AM - 11PM</p>
+         <p>Saturday - Sunday 8AM - 6PM</p>
+         
+         </div>
+ 
+         <div class="quickLinks">
+             <h3>Quick Link</h3>
+             <li class="navItem">
+                 <a href="index.html" class="navLink">Home</a>
+             </li>
+ 
+            
+ 
+             <li class="navItem">
+                 <a href="menu.html" class="navLink">Menu</a>
+             </li>
+ 
+         </div>
+        </div>
+    </section>
+    <!-- Footer Section Ends -->
+
+    <!-- Copyright Div -->
+    <section class="copyrightDiv">
+        <p>ALL RIGHT RESERVED | João Bogo <script>document.write(new Date().getFullYear())</script></p>
+    </section>
+    <!-- Copyright Div Ends -->
+ 
+ 
+    <!-- Link to swiper JS -->
+    <script src="./swiper-bundle.min.js"></script>
+    <!-- Link to JS -->
+    <script src="./index.js"></script>
+     
+ </body>
+ </html>    
